@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: linear-gradient(45deg, #190361, #8d0118);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+    background: #ffffff;
+
+    width: min(428px, 90%);
+
+    margin-top: -120px;
+    text-align: center;
+
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 64px;
+}
+
+/* SCREEN 1 */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+
+    color: #34355B;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #34355B;
+}
+
+.screen1 img:hover {
+    cursor: pointer;
+    animation: vibrance .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes vibrance {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* SCREEN 2 */
+
+.screen2 p{
+    font-family: 'Special Elite', sans-serif;
+}
+
+.fortune {
+    background-color: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+    padding: 10px;
+
+    animation: appear 1s;
+
+}
+
+@keyframes appear {
+    0% { transform: scale(0) }
+    10% { transform: scale(0.1); }
+    20% { transform: scale(0.2); }
+    30% { transform: scale(0.3); }
+    40% { transform: scale(0.4); }
+    50% { transform: scale(0.5); }
+    60% { transform: scale(0.6); }
+    70% { transform: scale(0.7); }
+    80% { transform: scale(0.8); }
+    90% { transform: scale(0.9); }
+    100% { transform: scale(1.0); }
+}
+
+button {
+    border: none;
+    font-family: 'DM Sans';
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+
+    line-height: 20px;
+
+    text-align: center;
+
+    width: 174px;
+    height: 52px;
+
+    background: #FF9500;
+    border-radius: 4px;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
