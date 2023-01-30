@@ -13,7 +13,6 @@ const fortune = [
 ]
 
 let createFortune = document.querySelector('.fortune')
-let selectFortune
 
 
 // events
