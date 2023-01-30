@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&family=Special+Elite&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -19,17 +19,17 @@
         <div class="screen1">
             <h1>What is today's fortune?</h1>
             <p>Open the cookie and find out!</p>
-            <img src="./imgs/fortunecookie.svg" alt="Fortune Cookie">
+            <img src="./imgs/fortunecookie.svg" id="fortunecookie" alt="Fortune Cookie">
         </div>
 
         <div class="screen2 hide">
             <h1>Here is today's fortune for you:</h1>
-            <div class="fortune"><p>A thing is not necessarily true because a man dies for it</p></div>
+            <div ><p class="fortune">A thing is not necessarily true because a man dies for it</p></div>
             <img src="./imgs/openedcookie.svg" alt="Opened Cookie">
-            <button class="btnReset">Open another one</button>
+            <button id="btnReset">Open another one</button>
 
         </div>
     </main>
-
+<script src="./main.js"></script>
 </body>
 </html>
